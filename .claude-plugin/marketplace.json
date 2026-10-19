@@ -1,0 +1,15 @@
+{
+  "name": "retiplex",
+  "owner": {
+    "name": "Retiplex",
+    "email": "support@retiplex.com"
+  },
+  "description": "Retiplex for AI agents: make UGC-style video ads with an AI actor from your agent.",
+  "plugins": [
+    {
+      "name": "retiplex",
+      "source": "./",
+      "description": "Research a brand, then make a UGC-style video ad with an AI actor in Retiplex. Includes the Retiplex connector."
+    }
+  ]
+}
