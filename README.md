@@ -1,4 +1,6 @@
-# Retiplex plugin
+# URL to UGC Ad
+
+**Paste a product link, get a researched UGC video ad.** By [Retiplex](https://app.retiplex.com).
 
 Research a brand like a UGC creative strategist, then make the video ad with
 [Retiplex](https://app.retiplex.com): script, AI actor, storyboard and the finished
@@ -19,28 +21,28 @@ something the research found.
 
 ## What's inside
 
-| Component               | What it does                                                                                                                                                                                                  |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Connector `retiplex`    | Remote MCP server `https://app.retiplex.com/mcp` (Streamable HTTP, OAuth sign-in). Creates projects, casts the actor, writes the script, plans the storyboard and renders the video on your Retiplex account. |
-| Skill `retiplex-ugc-ad` | The research-to-ad workflow: research playbook, angle selection, mapping research to Retiplex's brief, actor and script, cost checks.                                                                         |
+| Component             | What it does                                                                                                                                                                                                  |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Connector `retiplex`  | Remote MCP server `https://app.retiplex.com/mcp` (Streamable HTTP, OAuth sign-in). Creates projects, casts the actor, writes the script, plans the storyboard and renders the video on your Retiplex account. |
+| Skill `url-to-ugc-ad` | The research-to-ad workflow: research playbook, angle selection, mapping research to Retiplex's brief, actor and script, cost checks.                                                                         |
 
 ## Install
 
 **Claude Code**
 
 ```
-/plugin marketplace add Retiplex/claude-plugin
-/plugin install retiplex@retiplex
+/plugin marketplace add Retiplex/video-ads-plugin
+/plugin install url-to-ugc-ad@retiplex
 ```
 
 Then run `/mcp`, choose Retiplex and sign in.
 
-**Claude (desktop and web)**: install the `.plugin` file from the plugin directory
+**Claude (desktop and web)**: install `url-to-ugc-ad.plugin` from the plugin directory
 or upload it. The first time the skill calls Retiplex, a browser window asks you to
 sign in and approve access.
 
 **Other agents**: add the remote MCP server `https://app.retiplex.com/mcp` and copy
-`skills/retiplex-ugc-ad` wherever your agent loads skills. Setup for ChatGPT,
+`skills/url-to-ugc-ad` wherever your agent loads skills. Setup for ChatGPT,
 Cursor, VS Code and others: https://app.retiplex.com/help/agents
 
 ## Requirements
@@ -57,7 +59,7 @@ Cursor, VS Code and others: https://app.retiplex.com/help/agents
 .claude-plugin/plugin.json        plugin manifest
 .claude-plugin/marketplace.json   lets Claude Code install it from this repo
 .mcp.json                         the Retiplex connector
-skills/retiplex-ugc-ad/           the skill and its references
+skills/url-to-ugc-ad/               the skill and its references
 ```
 
 To disconnect, open Account → Connected agents in Retiplex.

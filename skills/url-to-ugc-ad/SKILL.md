@@ -1,10 +1,10 @@
 ---
-name: retiplex-ugc-ad
+name: url-to-ugc-ad
 description: Research a brand and its customers, turn the findings into a creative strategy, then produce a UGC-style video ad with an AI actor through the Retiplex MCP server. Use this whenever someone wants a video ad, UGC ad, TikTok/Reels/Shorts ad, product video or creative for paid social for a product, store or brand — especially when they give a product URL or brand name and say things like "make an ad for this", "create a UGC video", "I need ad creatives for my Shopify store", or "research this brand and make a video". Use it even if they don't mention Retiplex or research.
-compatibility: Uses the Retiplex MCP server (https://app.retiplex.com/mcp, OAuth), which the Retiplex plugin bundles, and web search or web fetch for the research phase. Video generation needs a paid Retiplex plan.
+compatibility: Uses the Retiplex MCP server (https://app.retiplex.com/mcp, OAuth), which the url-to-ugc-ad plugin bundles, and web search or web fetch for the research phase. Video generation needs a paid Retiplex plan.
 ---
 
-# Research-driven UGC video ads with Retiplex
+# URL to UGC ad — research-driven video ads with Retiplex
 
 Most AI ads fail for the same reason most human ads fail: they say generic things
 ("high quality", "game changer") to nobody in particular. This skill fixes that by
@@ -24,7 +24,7 @@ The work has three phases with one user checkpoint between each:
 Call `get_account`. It returns the credit balance, the plan, whether the account can
 generate videos (`canGenerateVideos`) and the longest script allowed.
 
-- The Retiplex plugin ships the connector with this skill, so its tools are normally
+- The url-to-ugc-ad plugin ships the Retiplex connector with this skill, so its tools are normally
   present. The first call opens a Retiplex sign-in in the browser (in Claude Code,
   the user runs `/mcp` and picks Retiplex); new users can create an account there
   or at https://app.retiplex.com/sign-up. You can't sign in for them.

@@ -1,12 +1,22 @@
 {
-  "name": "retiplex",
+  "name": "url-to-ugc-ad",
   "version": "0.1.0",
-  "description": "Research a brand, then make a UGC-style video ad with an AI actor in Retiplex. Bundles the Retiplex connector (remote MCP, OAuth) and the research-to-ad skill.",
+  "description": "Paste a product link, get a researched UGC video ad. Mines reviews, Reddit and competitors for real customer language, proposes hooks, then makes the ad with an AI actor in Retiplex. Includes the Retiplex connector.",
   "author": {
     "name": "Retiplex",
     "email": "support@retiplex.com",
     "url": "https://app.retiplex.com"
   },
   "homepage": "https://app.retiplex.com/help/agents",
-  "keywords": ["video ads", "ugc", "ai actor", "ad creative", "marketing", "tiktok", "meta ads", "retiplex"]
+  "keywords": [
+    "ugc ads",
+    "ai ugc",
+    "video ads",
+    "ad creative",
+    "creative strategy",
+    "tiktok ads",
+    "meta ads",
+    "shopify",
+    "retiplex"
+  ]
 }

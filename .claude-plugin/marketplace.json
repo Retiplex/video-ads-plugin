@@ -7,9 +7,9 @@
   "description": "Retiplex for AI agents: make UGC-style video ads with an AI actor from your agent.",
   "plugins": [
     {
-      "name": "retiplex",
+      "name": "url-to-ugc-ad",
       "source": "./",
-      "description": "Research a brand, then make a UGC-style video ad with an AI actor in Retiplex. Includes the Retiplex connector."
+      "description": "Paste a product link, get a researched UGC video ad, made with an AI actor in Retiplex."
     }
   ]
 }
