@@ -19,17 +19,17 @@ something the research found.
 
 ## What's inside
 
-| Component | What it does |
-|---|---|
-| Connector `retiplex` | Remote MCP server `https://app.retiplex.com/mcp` (Streamable HTTP, OAuth sign-in). Creates projects, casts the actor, writes the script, plans the storyboard and renders the video on your Retiplex account. |
-| Skill `retiplex-ugc-ad` | The research-to-ad workflow: research playbook, angle selection, mapping research to Retiplex's brief, actor and script, cost checks. |
+| Component               | What it does                                                                                                                                                                                                  |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Connector `retiplex`    | Remote MCP server `https://app.retiplex.com/mcp` (Streamable HTTP, OAuth sign-in). Creates projects, casts the actor, writes the script, plans the storyboard and renders the video on your Retiplex account. |
+| Skill `retiplex-ugc-ad` | The research-to-ad workflow: research playbook, angle selection, mapping research to Retiplex's brief, actor and script, cost checks.                                                                         |
 
 ## Install
 
 **Claude Code**
 
 ```
-/plugin marketplace add <owner>/<repo>
+/plugin marketplace add Retiplex/claude-plugin
 /plugin install retiplex@retiplex
 ```
 
